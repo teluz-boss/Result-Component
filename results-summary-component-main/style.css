@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hanken Grotesk", serif;
+  font-size: 1.8rem;
+}
+
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
+  border-radius: 11px;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.result {
+  border-radius: 18px;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  padding: 3.2rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.result-text {
+  padding-bottom: 2.2rem;
+  color: hsl(241, 100%, 89%);
+  font-weight: 800;
+}
+
+.number-box {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(241, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: inset 1rem 0.7rem 1.2rem rgba(0, 0, 0, 0.1);
+}
+
+.first-number {
+  font-size: 6rem;
+  margin-bottom: 0.2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.second-number {
+  color: hsl(241, 100%, 89%);
+  font-weight: 400;
+}
+
+.great {
+  margin: 3rem 0;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+.you {
+  color: hsl(241, 100%, 89%);
+  padding-bottom: 2rem;
+}
+
+.summary {
+  padding: 3.2rem 2rem;
+}
+.summary-text {
+  margin-bottom: 2rem;
+}
+
+.summary-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin-bottom: 2.6rem;
+}
+
+.list-item {
+  padding: 1.8rem;
+  font-weight: 600;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item p {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.list-item span {
+  color: #333;
+}
+
+.list-item:first-child {
+  background-color: rgba(255, 87, 87, 0.21);
+  color: hsl(0, 100%, 67%);
+}
+
+.list-item:nth-child(2) {
+  background-color: hsla(39, 100%, 56%, 0.2);
+  color: hsl(39, 100%, 56%);
+}
+
+.list-item:nth-child(3) {
+  background-color: hsla(166, 100%, 37%, 0.21);
+  color: hsl(166, 100%, 37%);
+}
+
+.list-item:last-child {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.21);
+}
+
+.btn {
+  display: inline-block;
+  background-color: hsl(224, 30%, 27%);
+  color: #fff;
+  text-decoration: none;
+  padding: 1.8rem 3.2rem;
+  border-radius: 150px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  transition: all 0.4s ease-in;
+}
+
+.btn:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(241, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+    box-shadow: 0;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
